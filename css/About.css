@@ -1,0 +1,282 @@
+*{
+    padding: 0px;
+    border: none;
+    margin: 0px;
+    font-family: Righteous;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+p{
+    cursor: initial;
+}
+
+a{
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    position: sticky;
+    top: 0px;
+    z-index: 11;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.burger{
+    display: none;
+}
+
+.burger div{
+    background-color: black;
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+    .carousel-container{
+        max-width: 100% !important;
+    }   
+}
+
+@media screen and (max-width:1600px){
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        top: 0vh;
+        background-color: #ffffff;
+        z-index: -3;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        transform: translateX(100%) scale(0) ;
+        transition: transform 1s ease;
+        color: black;
+    }
+    .nav-links li{
+        opacity: 0;
+    } 
+
+    .nav-links li a {
+        color: black;
+        z-index: 3;
+    }
+
+    .burger{
+        position: absolute;
+        right: 5%;
+        display: block;
+        cursor: pointer;
+    }
+    .logo{
+        position: absolute;
+        left: 5%;
+        font-size: 18px;
+    }
+    .carousel-container{
+        max-height: 30% !important;
+        max-width: 100% !important;
+    }
+    .slider-img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+}
+
+
+.nav-active {   
+    transform: translateX(0%) scale(1);
+    position: fixed;
+}
+
+@keyframes navlinkfade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.nav-display-none{
+    display: none;
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-11px, -1px);
+}
+
+.toggle .line2{
+    opacity: 0; 
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-11px, -1px);  
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.se-cont{
+    position: absolute;
+    top: 20%;
+    width: 85%;
+    height: 65%;
+    background-color: white;
+}
+
+.title{
+    margin: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ptitle{
+    width: 80px;
+    padding: 3px;
+    border-bottom: 2px solid black;
+}
+
+.main-text{
+    width: 100%;
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+
+.footer{
+    position: absolute;
+    top: 120vh;
+    width: 100%;
+    height: 140px;
+    background: rgba(00, 00, 00, 0.81);
+    color: #D6D6D6;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-cont{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    height: 105%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient( 135deg,rgb(236, 97, 97),  rgb(255, 136, 0));
+}
+
+.flag{
+    position: absolute;
+    height: 65px;
+    top: 40px;
+
+}
+
+.insta{
+    position: absolute;
+    top: 90%;
+    font-size: 25px;
+}
+
+#insta-icon{
+    font-weight: 600;
+}
+
+@media screen and (min-width:1080px){
+    .se-cont{
+        height: 80%;
+        width: 450px;
+        left: 50%;
+    }
+    .insta{
+        position: absolute;
+        top: 60%;
+        left:10%;
+    }
+    .flag{
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        height: 100px;
+    }
+    .big-cont{
+        height: 85%;
+    }
+    .footer{
+        top: 100vh;
+    }
+}
+
+.admin-cont{
+    padding: 20px;
+    position: absolute;
+    top: calc(45% - 20px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 0%;
+}
+
+.developer{
+    padding: 20px;
+    display: flex;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    top: 65%;
+    width: 100%;
+}

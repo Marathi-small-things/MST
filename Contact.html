@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Contact.css">
+    <title>Contact - Marathi_small_things</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <p>Marathi_Small_Things</p>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="Index.html">Home</a>
+            </li>
+            <li>
+                <a href="About.html">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="Content.html">Content</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    
+    <div class="contact-title">
+        <h1>Contact Us</h1>
+        <h2>We are always ready to serve you!</h2>
+    </div>
+    <section>
+        <div class="container">
+          <form action="https://formspree.io/xnqoqwyj" method="POST" id="contact-form">
+      
+            <input type="text" class="form-control" name="Name" placeholder="Your Name" required>
+            <br>
+            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+            <br>
+            <textarea name="message" class="form-control" cols="30" rows="10" placeholder="Message" required></textarea>
+      
+            <button type="submit" class="submit">Submit</button>
+          </form>
+        </div>
+        <div id="status"></div>
+      </section>
+
+    <script src="js/contact.js"></script>
+</body>
+</html>
