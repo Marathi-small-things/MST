@@ -221,7 +221,7 @@ a{
 
 .vision-cont{
     position: absolute;
-    top: 1540px;
+    top: 1740px;
     width: 100%;
 
 }
@@ -270,7 +270,7 @@ a{
 
 .footer{
     position: absolute;
-    top: 1600px;
+    top: 2200px;
     width: 100%;
     height: 140px;
     background: rgba(00, 00, 00, 0.81);
@@ -286,12 +286,13 @@ a{
         position: absolute !important;
         max-width: 70% !important;
         left: 15%;
+        top: 1800px !important;
     }
     .tags-cont{
         width: 100%;
         height: 50vh;
         position: absolute;
-        top: 305vh;
+        top: 1900px;
         left: 0%;
     }  
 }
@@ -338,12 +339,16 @@ a{
         width: 100%;
         height: 50vh;
         position: absolute;
-        top: 285vh;
+        top: 1800px;
         left: 0%;
     }
     .footer{
-        top: 327vh;
+        top: 2050px;
+    }
+    .vision-cont{
+        position: absolute !important;
+        max-width: 90% !important;
+        left: 5%;
+        top: 1600px;
     }
 }
-
-
