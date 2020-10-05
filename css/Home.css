@@ -286,7 +286,7 @@ a{
         position: absolute !important;
         max-width: 70% !important;
         left: 15%;
-        top: 1800px !important;
+        top: 1740px;
     }
     .tags-cont{
         width: 100%;
