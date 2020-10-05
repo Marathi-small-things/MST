@@ -253,7 +253,7 @@ a{
 .tags-cont{
     width: 100%;
     position: absolute;
-    left: 0%;
+    left: -10%;
 }
 
 .tag{
