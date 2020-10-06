@@ -253,14 +253,13 @@ a{
 .tags-cont{
     width: 100%;
     position: absolute;
-    left: -10%;
+    left: -200px;
 }
 
 .tag{
     display: block;
     padding-top: 6px;
     z-index: -6;
-    margin-left: -40px;
 }
 
 .tag-text{
