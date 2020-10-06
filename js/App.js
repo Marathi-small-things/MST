@@ -1,7 +1,10 @@
 // auto reload on size change
 
 
-
+window.addEventListener('resize', function () { 
+    "use strict";
+    window.location.reload(); 
+});
 
 
 const navSlide = () => {
