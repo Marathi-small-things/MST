@@ -1,9 +1,5 @@
 // auto reload on size change
 
-window.addEventListener('resize', function () { 
-    "";
-    window.location.reload(); 
-});
 
 
 
