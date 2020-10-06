@@ -369,11 +369,13 @@ a{
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    margin-left: 30px; 
     
 }
 
 #post2{
     padding-top: 520px;
+    margin-left: 30px;
 }
 
 
